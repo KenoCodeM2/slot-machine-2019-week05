@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  background-image: url(../img/Bleachbg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5% 5%;
+}
+
+body {
+  text-align: center;
+}
+
+.bleachlogo {
+  width: 60%;
+  height: 100px;
+}
+
+
+
+h1,
+h2,
+h3,
+button {
+  font-size: 30px;
+  font-family: 'Sansita', 'Roboto', "Lato";
+  background-color: rgba(215, 215, 215, 0.715);
+
+}
+
+.soulrepears {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.reel1,
+.reel2,
+.reel3 {
+  width: 30%;
+}
+
+
+.soulrepears img {
+  width: 100%;
+  height: 250px;
+}
+
+
+
+button {
+  font-size: 20px;
+  color: purple;
+
+}
+
+
+
+
+.reiryoku1 {
+  color: purple;
+  width: 100%;
+
+
+}
+
+/* smaller screens, such as phones */
+@media screen and (max-width: 768px) {
+  .bleachlogo {
+    width: 90%;
+    /* Make logo larger on smaller screens */
+    height: auto;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 24px;
+    /* Adjust headings for mobile */
+  }
+
+  button {
+    font-size: 16px;
+    /* Smaller button text for mobile */
+  }
+
+  .soulrepears {
+    flex-direction: column;
+    /* Stack items vertically on small screens */
+    align-items: center;
+    /* Center items in the column */
+  }
+
+  .reel1,
+  .reel2,
+  .reel3 {
+    width: 30%;
+    /* Take up more width on smaller screens */
+  }
+
+  .soulrepears img {
+    height: 150px;
+  }
+}
+
+/*medium screens, such as tablets */
+
+@media screen and (max-width: 1024px) {
+
+  h1,
+  h2,
+  h3 {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  .reel1,
+  .reel2,
+  .reel3 {
+    width: 45%;
+    /* Arrange items in two columns for tablets */
+  }
+
+  .soulrepears img {
+    height: 250px;
+  }
+}
