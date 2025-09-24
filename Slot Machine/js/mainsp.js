@@ -17,13 +17,13 @@ const soulrepears = [
     "img/Yoruichi.jpg"
 ];
 
-// Function to handle the restarting the game and alert to notify
+// Function to handle the restarting the game and alert to notify.  "Used Google for the restart command.
 function restartGame() {
     alert("How can you continue with such low Spiritual Pressure? Restarting game...");
     location.reload();
 }
 
-// Function to check if spiritual pressure is zero and schedule restart
+// Function to check if spiritual pressure is zero and schedule restart. "Used Google for the restart command."
 function checkAndRestart() {
     if (Number(reiryoku.innerText) <= 0) {
         setTimeout(restartGame, 3000); // 3-second delay
@@ -38,7 +38,7 @@ function minpower() {
         let reel2Index = Math.floor(Math.random() * soulrepears.length);
         let reel3Index = Math.floor(Math.random() * soulrepears.length);
 
-        // Update the images by setting the `src` attribute
+        // Update the images by setting the `src` attribute. " Used google for the FirstelementChild line because it said it avoids  cross-site scripting"
         reel1.firstElementChild.src = soulrepears[reel1Index];
         reel2.firstElementChild.src = soulrepears[reel2Index];
         reel3.firstElementChild.src = soulrepears[reel3Index];
