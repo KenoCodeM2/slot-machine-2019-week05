@@ -1,3 +1,8 @@
+//citation https://www.youtube.com/watch?v=0JYFFay6GO8&t=212s
+//https://github.com/xsarahyu/GOT-slot-machine
+// Used MDN / Google for certain functions 
+// https://github.com/RoReeceDev/Anime-Angel-Reels-Slot-Machine
+
 let bankai = document.querySelector(".bankai");
 let reel1 = document.querySelector(".reel1");
 let reel2 = document.querySelector(".reel2");
